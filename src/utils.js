@@ -1,5 +1,5 @@
 function getHelloString(token) {
-  return `start-${token}-end0`;
+  return `start-${token}-end`;
 }
 
 module.exports = {
