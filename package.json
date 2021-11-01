@@ -8,9 +8,14 @@
     "start": "node src/",
     "test": "npm run eslint && npm run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json --fix",
-    "coverage": "nyc npm run mocha",
+    "coverage": "nyc npm run test",
     "mocha": "cross-env NODE_CONFIG_ENV=test mocha test/ --timeout 10000 --recursive --exit",
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+  },
+  "nyc": {
+    "check-coverage": true,
+    "all": false,
+    "lines": 70
   },
   "dependencies": {
     "express": "^4.16.1"
