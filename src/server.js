@@ -1,5 +1,5 @@
 'use strict';
-
+const utils = require('./utils');
 const express = require('express');
 
 // Constants
@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send('Hello World: ' + utils.getHelloString(req.hostname));
 });
 
 app.listen(PORT, HOST);
