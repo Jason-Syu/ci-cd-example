@@ -14,7 +14,7 @@
   },
   "nyc": {
     "check-coverage": true,
-    "all": true,
+    "all": false,
     "lines": 70
   },
   "dependencies": {
