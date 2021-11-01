@@ -4,6 +4,7 @@ function getHelloString(token) {
 
 function notCoveredFunc() {
   console.log('not covered');
+  return true;
 }
 
 module.exports = {
