@@ -8,4 +8,5 @@ function notCoveredFunc() {
 
 module.exports = {
   getHelloString,
+  notCoveredFunc,
 };
