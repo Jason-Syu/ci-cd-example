@@ -13,7 +13,8 @@ describe('Test Utils', () => {
     const key = 'none';
     const out = getHelloString(key);
 
-    const found = out.match(/start-([a-zA-Z0-9]+)-end/);
+    const found = out.match(/^start-([a-zA-Z0-9]+)-end$/);
+
     sinon.assert.match(found === null, false);
     sinon.assert.match(found[1], key);
   });
