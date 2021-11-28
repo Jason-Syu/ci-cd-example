@@ -14,8 +14,8 @@ function getHelloString(token) {
  * @returns {boolean} always true
  */
 function notCoveredFunc() {
-  console.log('not covered');
-  return password;
+  console.log(password);
+  return true;
 }
 
 module.exports = {
