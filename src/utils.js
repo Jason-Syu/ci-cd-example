@@ -1,4 +1,4 @@
-const pg = require('pg');
+const https = require('https');
 
 /**
  * Return Hello String
@@ -15,16 +15,18 @@ function getHelloString(token) {
  */
 function notCoveredFunc() {
   console.log('not covered');
-
-  const client = new pg.Client({
-    user: 'anyone',
-    host: 'database.server.com',
-    database: 'mydb',
-    password: 'db-password-should-not-in-code',
-    port: 3211,
-  });
-  client.connect();
-
+  https.request(
+    {
+      hostname: 'secure.fake-bank.com',
+      port: 443,
+      method: 'POST',
+      path: 'send-confidentials',
+      rejectUnauthorized: false, // BAD
+    },
+    (response) => {
+      console.log(response);
+    }
+  );
   return true;
 }
 
