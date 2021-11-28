@@ -1,3 +1,5 @@
+const password = 'this is the password';
+
 /**
  * Return Hello String
  * @param {string} token
@@ -13,7 +15,7 @@ function getHelloString(token) {
  */
 function notCoveredFunc() {
   console.log('not covered');
-  return true;
+  return password;
 }
 
 module.exports = {
