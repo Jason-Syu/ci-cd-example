@@ -8,8 +8,9 @@
     "ecmaVersion": 2018
   },
   "extends": ["eslint:recommended", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier","jsdoc"],
   "rules": {
+    "require-jsdoc": 1,
     "indent": ["off"],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single", { "avoidEscape": true }],
