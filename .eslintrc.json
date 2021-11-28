@@ -10,7 +10,7 @@
   "extends": ["eslint:recommended", "prettier"],
   "plugins": ["prettier","jsdoc"],
   "rules": {
-    "require-jsdoc": 1,
+    "require-jsdoc": ["error"],
     "indent": ["off"],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single", { "avoidEscape": true }],
