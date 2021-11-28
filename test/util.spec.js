@@ -18,4 +18,8 @@ describe('Test Utils', () => {
     sinon.assert.match(found === null, false);
     sinon.assert.match(found[1], key);
   });
+
+  it('test notCoveredFunc', () => {
+    sinon.assert.match(utils.notCoveredFunc(), true);
+  });
 });
