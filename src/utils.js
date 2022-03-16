@@ -1,5 +1,3 @@
-const https = require('https');
-
 /**
  * Build Hello String
  * @param {string} token token to generate the output string
