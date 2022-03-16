@@ -4,7 +4,7 @@
  * @returns {string} the created string in expected format
  */
 function getHelloString(token) {
-  return `start-${token}-end0`;
+  return `start-${token}-end`;
 }
 
 /**
