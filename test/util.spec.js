@@ -3,7 +3,7 @@ const sinon = require('sinon');
 const utils = require('../src/utils');
 
 describe('Test Utils', () => {
-  before(async () => {});
+  before(async () => { });
 
   afterEach(() => {
     sinon.restore();
@@ -19,7 +19,4 @@ describe('Test Utils', () => {
     sinon.assert.match(found[1], key);
   });
 
-  it('test notCoveredFunc', () => {
-    sinon.assert.match(utils.notCoveredFunc(), true);
-  });
 });
