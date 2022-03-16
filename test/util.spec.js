@@ -3,7 +3,7 @@ const sinon = require('sinon');
 const utils = require('../src/utils');
 
 describe('Test Utils', () => {
-  before(async () => {});
+  before(async () => { });
 
   afterEach(() => {
     sinon.restore();
