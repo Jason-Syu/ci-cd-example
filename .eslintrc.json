@@ -7,13 +7,38 @@
   "parserOptions": {
     "ecmaVersion": 2018
   },
-  "extends": ["eslint:recommended", "prettier"],
-  "plugins": ["prettier"],
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier",
+    "jsdoc"
+  ],
   "rules": {
-    "indent": ["off"],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single", { "avoidEscape": true }],
-    "semi": ["error", "always"],
-    "prettier/prettier": ["error"]
+    "require-jsdoc": [
+      "error"
+    ],
+    "indent": [
+      "off"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "prettier/prettier": [
+      "error"
+    ]
   }
 }
