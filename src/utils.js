@@ -15,24 +15,6 @@ function getHelloString(token) {
  */
 function notCoveredFunc() {
   console.log('not covered');
-  //
-  const options = {
-    hostname: 'secure.fake-bank.com',
-    port: 443,
-    method: 'POST',
-    path: 'send-confidentials',
-    rejectUnauthorized: false, // bad disable, for demo
-  };
-  const req = https.request(options, (resp) => {
-    console.log(resp);
-  });
-  req.on('socket', (socket) => {
-    socket.setTimeout(500);
-    socket.on('timeout', () => req.destroy());
-  });
-  req.on('error', () => { });
-  req.end();
-  //
 
   return true;
 }
